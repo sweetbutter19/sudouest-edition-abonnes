@@ -1,0 +1,30 @@
+{
+    "name": "SudOuest Edition Abonnés",
+    "version": "1.0",
+    "description": "Lire les articles réservés aux abonnés",
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [{
+        "matches": ["http://www.sudouest.fr/*"],
+        "css": ["css/style.css"]
+    }],
+
+    "page_action" : {
+        "default_icon" : "img/icon-19.png",
+        "default_title" : "Edition abonnés!"
+    },
+
+    "permissions" : [
+        "declarativeContent"
+    ],
+
+    "icons" : {
+        "48" : "img/icon-48.png",
+        "128" : "img/icon-128.png"
+    },
+
+    "manifest_version": 2
+}
